@@ -1,0 +1,334 @@
+@import url("https://fontsapi.zeoseven.com/292/main/result.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "LXGW WenKai";
+    background-color: #faf9f8;
+    color: #1a2a2f;
+    line-height: 1.5;
+    padding: 2rem 1.5rem;
+}
+
+.home-container {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 2rem 0;
+}
+
+.site-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+    color: #1f3e42;
+    text-align: left;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 2.8rem;
+    color: #2c4b4f;
+    max-width: 780px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.thriving-links {
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
+}
+.links{
+   border-bottom: 1px solid #e2e0de;
+   margin-bottom:5px;
+}
+.year-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0f6b7c;
+    transition: color 0.2s ease;
+    padding: 0.25rem 0;
+    border-bottom: none;
+    background: none;
+}
+
+.year-link:hover {
+    color: #0a4b57;
+    text-decoration: underline;
+}
+
+.hunt-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.page-header {
+    margin-bottom: 2.5rem;
+    text-align: left;
+    position: relative;
+}
+
+.back-home {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #2c6e6e;
+    margin-bottom: 0.75rem;
+    background: transparent;
+    border: none;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+    color: #124e52;
+}
+
+.hunt-title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: #1f4a4e;
+    border: none;
+    margin: 0.5rem 0 0;
+    text-align: center;
+}
+
+.puzzle-list {
+    margin: 2rem 0 2.5rem;
+    border: none;
+    background: transparent;
+}
+
+.puzzle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #e2e0de;
+}
+
+.puzzle-row:first-child {
+    border-top: none;
+}
+
+.puzzle-name {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1f5e63;
+    font-weight: 480;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: left;
+}
+
+.puzzle-name:hover {
+    color: #043b40;
+}
+
+.solution-btn {
+    font-size: 0.9rem;
+    text-decoration: none;
+    background: transparent;
+    color: #bd6b2a;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 450;
+    border: none;
+}
+
+.solution-btn:hover {
+    background: rgba(189, 107, 42, 0.08);
+    color: #9b4f1c;
+}
+
+.hunt-footer {
+    text-align: left;
+    font-size: 0.85rem;
+    color: #7f8c8a;
+    margin-top: 2.5rem;
+    border: none;
+    padding-top: 0.8rem;
+}
+
+.detail-container, .solution-container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 0.5rem 0 2rem;
+    text-align: left;
+}
+
+.detail-nav, .solution-nav {
+    display: flex;
+    gap: 1.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e3dfdb;
+    justify-content: flex-start;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2b7a6e;
+    font-size: 0.95rem;
+    background: none;
+    border: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #165a50;
+}
+
+.detail-title, .solution-title {
+    font-size: 2rem;
+    font-weight: 550;
+    color: #1e4a4f;
+    margin: 0.75rem 0 1.5rem 0;
+    letter-spacing: -0.2px;
+    border: none;
+    text-align: center;
+}
+
+.detail-content {
+    font-size: 1rem;
+    color: #2b3b3e;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.detail-content p {
+    margin: 1.2rem 0;
+    text-align: left;
+}
+
+.detail-content blockquote {
+    margin: 1.2rem 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid #cbc5bc;
+    color: #3c5a5e;
+    font-style: normal;
+    background: transparent;
+    text-align: left;
+}
+
+.detail-meta {
+    font-size: 0.85rem;
+    color: #6f8683;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #ddd8d2;
+    text-align: left;
+}
+
+.detail-footer, .solution-credit {
+    text-align: left;
+    font-size: 0.85rem;
+    color: #98a8a5;
+    margin-top: 2.5rem;
+    border: none;
+    letter-spacing: 0.3px;
+}
+
+.solution-step {
+    background: transparent;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.solution-step h2 {
+    font-size: 1.5rem;
+    font-weight: 520;
+    margin: 1.5rem 0 0.8rem 0;
+    color: #265e5e;
+    border: none;
+    text-align: left;
+}
+
+.solution-step p {
+    margin: 0.9rem 0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.solution-pre {
+    background-color: #f2efec;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 1rem 0;
+    border: none;
+    color: #1f3e3c;
+    text-align: left;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 1.2rem;
+    }
+    .site-title {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+    .year-link {
+        font-size: 1.25rem;
+    }
+    .puzzle-name {
+        font-size: 1rem;
+    }
+    .detail-title, .solution-title {
+        font-size: 1.7rem;
+        text-align: left;
+    }
+    .puzzle-row {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .solution-btn {
+        padding: 0.1rem 0.6rem;
+    }
+    .detail-nav, .solution-nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+a{
+    text-decoration: none;
+}
+a, .solution-btn, .year-link, .nav-link, .back-home, .puzzle-name {
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+a:active, a:focus, button:active, .solution-btn:active {
+    outline: none;
+    background: transparent;
+}
+
+.hunt-wrapper, .home-container, .detail-container, .solution-container {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+hr, fieldset, legend {
+    display: none;
+}
