@@ -1,0 +1,280 @@
+<!-- 1.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谜题详情 | Puzzle Museum</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+    .crossword-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .crossword-grid {
+        display: grid;
+        grid-template-columns: repeat(17, 30px);
+        grid-template-rows: repeat(17, 30px);
+        border: 1px solid #000;
+        margin-bottom: 30px;
+    }
+
+    .cell {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .cell.black {
+        background-color: #000;
+    }
+
+    .cell-number {
+        position: absolute;
+        top: 1px;
+        left: 2px;
+        font-size: 8px;
+    }
+
+    .clues {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .clue-section {
+        margin-bottom: 20px;
+    }
+
+    .clue-section h3 {
+        margin-bottom: 10px;
+    }
+
+    .clue {
+        margin: 5px 0;
+        line-height: 1.6;
+    }
+
+    .riddle-section {
+        margin: 40px auto;
+        max-width: 1000px;
+        padding: 0 20px;
+        border-top: 2px solid #333;
+        padding-top: 30px;
+    }
+
+    .riddle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .riddle-left, .riddle-right {
+        flex: 1;
+    }
+
+    .riddle-middle {
+        font-size: 36px;
+        font-weight: bold;
+        color: #666;
+    }
+
+    .riddle-item {
+        margin: 10px 0;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .riddle-left .riddle-item {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .riddle-right .riddle-item {
+        color: #34495e;
+    }
+</style>
+
+</head>
+<body>
+    <article class="detail-container">
+        <div class="detail-nav">
+            <a href="../../hunt.html" class="nav-link">返回题目列表</a>
+        </div>
+        <h1 class="detail-title">无孔不入的填字游戏</h1>
+        <div class="detail-content">
+
+<div class="crossword-container">
+    <div class="crossword-grid" id="grid"></div>
+</div>
+
+<div class="clues">
+    <div class="clue-section">
+        <p>本题使用：</p>
+        <p>1.中心对称原则</p>
+        <p>2.无死胡同原则（所有白格都至少有两个四方向相邻的白格）</p>
+        <p>3.相邻成词原则（任意1*N且两端为黑块的白格串均为符合自然阅读顺序的成词）</p>
+        <p>4.无田字原则（没有2*2的白格）</p>
+        <p>5.普通diagramless crossword规则适用</p>
+        <h3>横</h3>
+        <div class="clue">与集体照相对的概念</div>
+        <div class="clue">他告诉我们：正义是杀不完的</div>
+        <div class="clue">起飞时要收起来</div>
+        <div class="clue">在天气预测、文本生成、随机过程建模等方面有广泛的应用</div>
+        <div class="clue">日本人用它翻译外来语</div>
+        <div class="clue">比如鲸鱼座ο、仙王座δ</div>
+        <div class="clue">一般出现在QQ中的校园虚拟布告栏，功能不局限于其名称</div>
+        <div class="clue">歌乐山的美食</div>
+        <div class="clue">描述质点沿运动轨道切线方向位置变化快慢的物理量</div>
+        <div class="clue">描述火木土天海冥的定语</div>
+        <div class="clue">国标麻将的88番役种，有四个刻子</div>
+        <div class="clue">党政军民学，__________</div>
+        <div class="clue">音译的西式快餐食品，含有地名</div>
+        <div class="clue">泛指双方战线的补给区域，如基地</div>
+        <div class="clue">蛯</div>
+        <div class="clue">某个世界的简称</div>
+        <div class="clue">研究感性认知的科学</div>
+        <div class="clue">一种保留了紫红色种皮的植物制品，可以补肾养心、清热降火</div>
+        <div class="clue">该曲牌名有一首著名作品与喇叭相关</div>
+        <div class="clue">君主母亲的封号</div>
+        <div class="clue">李白写的一首五言古体诗的标题，也是乐府旧题</div>
+        <div class="clue">形容行径十分残暴</div>
+        <div class="clue">一种科举考试文体</div>
+        <div class="clue">平面、极、三维都可以用来修饰这个词</div>
+        <div class="clue">由海陆热力性质差异造成的气候，典型分布区域有东亚、南亚部分地区</div>
+        <div class="clue">30°20′~32°30′N, 119°24′~122°30′E</div>
+        <div class="clue">使公众信任的力量</div>
+        <div class="clue">有优越视野的房型</div>
+        <div class="clue">机构中负责访客的部门</div>
+        <div class="clue">全身上下牙齿最白</div>
+        <div class="clue">可以用来换成美酒</div>
+        <div class="clue">本题的提取方式</div>
+        <div class="clue">三个形容词的缩写，讽刺表面符合之却偏向某方的人</div>
+        <div class="clue">出去旅游后要给亲人朋友带的当地物品</div>
+        <div class="clue">Windows系统中提供用户界面来操作文件系统的软件</div>
+        <div class="clue">DDVP</div>
+        <div class="clue">一般由不可抗力引起，学生听了会很开心</div>
+        <div class="clue">______九婶婆</div>
+        <div class="clue">表示无法实施</div>
+        <div class="clue">大学的第二个学期</div>
+        <div class="clue">最基础的自然科学之一</div>
+        <div class="clue">用于回应他人的致谢</div>
+        <div class="clue">中国义务教育阶段实行的一种教育模式</div>
+        <div class="clue">计算机网络的PAN中，AN所表示的</div>
+        <div class="clue">一般指3-6岁的儿童</div>
+        <div class="clue">土壤侧向排水</div>
+    </div>
+
+    <div class="clue-section">
+        <h3>竖</h3>
+        <div class="clue">仅支持单向遍历的线性数据存储结构</div>
+        <div class="clue">展示摄影成果的地方</div>
+        <div class="clue">"誉满天下"的近义词</div>
+        <div class="clue">可以形容六月的天气、翻脸的速度等</div>
+        <div class="clue">一种常用于火锅调味的刺激性茄科植物</div>
+        <div class="clue">麦当劳一款不辣的烧烤味汉堡</div>
+        <div class="clue">部分人群健身锻炼腹部的目标</div>
+        <div class="clue">大气的透明度又称</div>
+        <div class="clue">疯狂的日子</div>
+        <div class="clue">一个地区，一种气候，一个发型</div>
+        <div class="clue">日本法西斯在二战时期以该名词掩盖对中国的侵略，取前三个字。</div>
+        <div class="clue">世界上海拔最高点属于这个区域</div>
+        <div class="clue">一首陕北民歌的改编，也是卫星的名称</div>
+        <div class="clue">该词牌的一首辛词中提到了孙权</div>
+        <div class="clue">包含东西两段历史的刘氏政权（三字）</div>
+        <div class="clue">春晚小品最后Happy Ending时要做的事</div>
+        <div class="clue">一本古书，也是一类教育机构</div>
+        <div class="clue">对于年长女性的尊称</div>
+        <div class="clue">形容外貌出众、能力卓越但命运坎坷的人物的网络用语</div>
+        <div class="clue">甲烷的俗称</div>
+        <div class="clue">王安石与其谥号有关的称呼</div>
+        <div class="clue">发射枪弹时因为动量守恒定律产生的现象</div>
+        <div class="clue">人与人之间的纽带</div>
+        <div class="clue">一种花，后一个字的时长是前一个字的三倍</div>
+        <div class="clue">《花开等郎来》《我有一段情》等歌曲所用的曲调</div>
+        <div class="clue">对道士的敬称</div>
+        <div class="clue">一些钱，也是一种香料</div>
+        <div class="clue">竞逐一个职位的参与人员</div>
+        <div class="clue">3↓0.4</div>
+        <div class="clue">一种国际通用的船间沟通系统</div>
+        <div class="clue">饥荒时期的食物，现在可用在药物中治疗腹泻</div>
+        <div class="clue">典型的不动产</div>
+        <div class="clue">一类需要旋转的纸笔谜题，也是一类工人要干的事</div>
+        <div class="clue">CPU中的PU</div>
+        <div class="clue">一种音译的职业，和计算机科学有关</div>
+        <div class="clue">42.195</div>
+        <div class="clue">一门学科课程，教授内容随国家变迁有很大变化</div>
+        <div class="clue">香港、澳门都属于此类</div>
+        <div class="clue">含有Cl-</div>
+        <div class="clue">"突飞猛进"的反义词</div>
+        <div class="clue">可以形容速溶咖啡的经典配方或多功能数据线</div>
+        <div class="clue">一种民主政治制度，最初于法国巴黎实行</div>
+        <div class="clue">在分处异地的用户之间传递信息的系统</div>
+        <div class="clue">地球最外部的气体圈层</div>
+        <div class="clue">古代称当时社会上最低等的一些职业</div>
+        <div class="clue">一种儒家学派，也是一个基础学科门类</div>
+    </div>
+</div>
+
+<div class="riddle-section">
+    <div class="riddle-container">
+        <div class="riddle-left">
+            <div class="riddle-item" style="color: #000; font-weight: bold; margin-bottom: 25px;">Keys(shuffled)</div>
+            <div class="riddle-item">辶由专</div>
+            <div class="riddle-item">菜田除草</div>
+            <div class="riddle-item">言过其实</div>
+            <div class="riddle-item">移除砾石</div>
+            <div class="riddle-item">暗无天日</div>
+            <div class="riddle-item">交而不错</div>
+            <div class="riddle-item">四个傍晚</div>
+            <div class="riddle-item">无心情</div>
+            <div class="riddle-item">无一人使</div>
+            <div class="riddle-item">二十有角</div>
+            <div class="riddle-item">虫卡掉头</div>
+            <div class="riddle-item">不见西洲</div>
+            <div class="riddle-item">昨日无人</div>
+        </div>
+
+        <div class="riddle-middle">→</div>
+
+        <div class="riddle-right">
+            <div class="riddle-item" style="color: #000; font-weight: bold; margin-bottom: 25px;">？？？</div>
+            <div class="riddle-item">一种原产于南美洲的多年生植物</div>
+            <div class="riddle-item">一个城市，一个州，也是一个海峡</div>
+            <div class="riddle-item">一种海味品，可以指代新人</div>
+            <div class="riddle-item">一种劳动人民联合组成的经济组织</div>
+            <div class="riddle-item">一颗北半球冬季夜晚可见的亮星</div>
+            <div class="riddle-item">一类使用气流振动发声的物品的统称</div>
+            <div class="riddle-item">一个部首，也是一个喜剧公司</div>
+            <div class="riddle-item">一位清官</div>
+            <div class="riddle-item">一个持续了一千余年的帝国</div>
+            <div class="riddle-item">一个北京的下辖地理单位</div>
+            <div class="riddle-item">一位神祇</div>
+            <div class="riddle-item">一个中小学生通常会经历的时间段</div>
+            <div class="riddle-item">一个文人的自称</div>
+        </div>
+    </div>
+</div>
+<p><a href="https://docs.qq.com/sheet/DRkdZQnJTQktuTWVn">复制到腾讯文档</a></p>
+<script>
+    // Generate 17x17 grid
+    const grid = document.getElementById('grid');
+    for (let i = 0; i < 17 * 17; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'cell';
+        grid.appendChild(cell);
+    }
+</script>
+
+        </div>
+    </article>
+</body>
+</html>
